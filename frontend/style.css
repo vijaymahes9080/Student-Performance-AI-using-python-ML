@@ -278,6 +278,45 @@ button:disabled {
     font-size: 0.9rem;
 }
 
+/* AI Badge Styling */
+.ai-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(99, 102, 241, 0.15);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #a5b4fc;
+    margin-top: 1rem;
+    box-shadow: 0 0 10px rgba(99, 102, 241, 0.1);
+}
+
+.badge-dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--success-color);
+    border-radius: 50%;
+    box-shadow: 0 0 8px var(--success-color);
+}
+
+.animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: .4;
+        transform: scale(0.9);
+    }
+}
+
 footer {
     margin-top: 3rem;
     font-size: 0.8rem;
